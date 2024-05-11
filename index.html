@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 600px;
+        height: 600px;
+        border: 1px solid grey;
+         text-align: center;
+    }  
+    .card{
+        background-color: brown;
+        color: aliceblue;
+        width: 60px;
+        padding: 10px;
+        margin: 50px;
+        text-align: center;
+        animation: animate 3s linear infinite;
+    }
+    @keyframes animate {
+        0% {transform: translate(0px) rotate(360deg); background-color: #f00;}
+        25% { transform: translate(200px) rotate(45deg); background-color: rgb(10, 234, 250);}
+        50% {transform: translate(400px) rotate(45deg); background-color: blue;}
+        75%{transform: translate(500px) rotate(45deg); background-color: #0f0;}
+        100% {transform: translate(0px) rotate(360deg); background-color: yellow;}
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">BOX</div>
+    </div>
+    
+</body>
+</html>
